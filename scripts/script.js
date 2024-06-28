@@ -10,6 +10,7 @@ const paloOfCardLow = document.getElementById("simboloInferior");
 const valorCard = document.getElementById("valorCarta");
 const valorSuperiorCard = document.getElementById("valorSuperior");
 const valorInferiorCard = document.getElementById("valorInferior");
+const contador = document.getElementById("cuentaRegresiva")
 let generateCard = function(){
     let randomNumberSimbol = Math.floor(Math.random()*palos.length)
     simbolo = palos[randomNumberSimbol];
@@ -33,7 +34,19 @@ let generateCard = function(){
 }
 
 function loadPage(){
+    
     generateCard();
+    let cuentaRegresiva = 10;
+    contador.innerHTML = `${": "+cuentaRegresiva + " segundos"}`;
+    setInterval(()=>{
+        cuentaRegresiva--;
+        if(cuentaRegresiva == 0){
+            generateCard();
+            cuentaRegresiva = 10;
+        }
+        contador.innerHTML = `${": "+cuentaRegresiva + " segundos"}`;
+        
+    },1000);
 }
 
 let botonGenerateCard = document.getElementById("botonGenerarCarta");

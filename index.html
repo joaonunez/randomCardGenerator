@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body onload="loadPage();">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body onload="loadPage();">
+    <div id="contenedorContador">
+      <span class="mensaje-actualizando"
+        >Actualizando carta en<span id="cuentaRegresiva"></span
+      ></span>
+    </div>
     <div class="card">
-        <div class="contenedor-superior">
-            <span class="valor-superior" id="valorSuperior"></span>
-            <span class="simbolo-superior" id="simboloSuperior"></span>
-        </div>
-        <span class="valor-carta" id="valorCarta"></span>
-        <div class="contenedor-inferior">
-            <span class="simbolo-inferior" id="simboloInferior"></span>
-            <span class="valor-inferior" id="valorInferior"></span>
-
-        </div>
-        
+      <div class="contenedor-superior">
+        <span class="valor-superior" id="valorSuperior"></span>
+        <span class="simbolo-superior" id="simboloSuperior"></span>
+      </div>
+      <span class="valor-carta" id="valorCarta"></span>
+      <div class="contenedor-inferior">
+        <span class="simbolo-inferior" id="simboloInferior"></span>
+        <span class="valor-inferior" id="valorInferior"></span>
+      </div>
     </div>
     <div class="contenedor-boton">
-        <button class="boton-generar" id="botonGenerarCarta" onclick="">Generar Carta</button>
+      <button class="boton-generar" id="botonGenerarCarta" onclick="">
+        Generar Carta
+      </button>
     </div>
     <script src="scripts/script.js"></script>
-</body>
+  </body>
 </html>
