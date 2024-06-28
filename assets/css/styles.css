@@ -1,0 +1,52 @@
+
+.card{
+    margin: auto;
+    margin-top: 100px;
+    height: 600px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+.valor-carta-sobre-simbolo{
+    font-size: 50px;
+    display: flex;
+    justify-content: start;
+    color: red;
+    margin-left: 15px;
+}
+.simbolo-superior{
+    font-size: 100px;
+    display: flex;
+    justify-content: start;
+    color: red;
+    margin-left: 15px;
+}
+.valor-carta{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+.simbolo-inferior{
+    font-size: 100px;
+    display: flex;
+    justify-content: start;
+    color: red;
+    rotate: 180deg;
+    margin-right: 15px;
+
+}
+.contenedor-boton{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.boton-generar{
+    font-size: 40px;
+    
+}
